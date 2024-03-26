@@ -39,7 +39,8 @@ export const Calcul = () => {
                 <input type="button" className='number' value="00" onClick={e =>setvalue(value + e.target.value)}/>
                 <input type="button" className='number' value="0" onClick={e =>setvalue(value + e.target.value)}/>
                 <input type="button" className='number' value="." onClick={e =>setvalue(value + e.target.value)}/>
-                <input type="button" className='signe' value="=" onClick={e => setvalue(eval(value))}/>
+                {/* eslint-disable-next-line */}
+                <input type="button" className='signe' value="=" onClick={() => setvalue(eval(value))}/>
             </div>
     
     </div>
